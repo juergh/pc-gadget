@@ -17,6 +17,7 @@ systemd.journald.forward_to_console=1
 # our debug shell there, this is the most key part here, without
 # this console-conf will kill/prevent from starting our debug shell
 systemd.mask=serial-getty@ttyS0.service
+systemd.mask=serial-console-conf@ttyS0.service
 
 # create our debug shell on ttyS0
 systemd.debug-shell=ttyS0
